@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnyhtlsu3o585"]
+
+[ext_resource type="Script" path="res://assets/scripts/footstep.gd" id="1_j68b1"]
+[ext_resource type="Texture2D" uid="uid://74oyfgmk2xkm" path="res://assets/visuals/samurai/footstep.png" id="2_cfclb"]
+
+[node name="Footstep" type="Node2D"]
+visibility_layer = 2
+z_index = 10
+script = ExtResource("1_j68b1")
+
+[node name="sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 1)
+texture = ExtResource("2_cfclb")
+
+[node name="sfx" type="AudioStreamPlayer2D" parent="."]
+max_distance = 50.0
+attenuation = 4.59479
